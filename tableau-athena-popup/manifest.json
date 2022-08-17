@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Tableau Athena Creds Pop-up",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["https://dashboards.example.com/*"],
+        "js": [ "jquery-3.6.0.slim.min.js", "config.js", "tableau.js" ]
+    }]
+}

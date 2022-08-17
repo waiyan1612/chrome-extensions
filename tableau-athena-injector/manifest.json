@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Tableau Athena Creds Injector",
+    "version": "1.0",
+    "web_accessible_resources": [{
+        "resources": ["tableau.js"],
+        "matches": ["https://dashboards.example.com/*"]
+    }],
+    "content_scripts": [{
+        "matches": [ "https://dashboards.example.com/*" ],
+        "js": [ "script-injector.js" ]
+    }]
+}
