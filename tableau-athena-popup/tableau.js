@@ -27,7 +27,7 @@ function replaceLabelWithButton(f, targetComponent) {
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        console.log(`Received ${request} from ${sender.tab ? "a content script:" + sender.tab.url : "the extension"}: ${sender}`);
+        console.log(`Received`, request, `from ${sender.tab ? "a content script:" + sender.tab.url : "the extension"}:`, sender);
         const f0 = "athena.ap-southeast-1.amazonaws.com:443;Workgroup=tableau;"
         const [f1, f2, f3] = fill(request.choice);
 
