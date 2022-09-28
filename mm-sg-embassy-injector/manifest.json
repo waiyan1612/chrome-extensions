@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "MM SG Embassy Appointment Injector",
+    "version": "1.0",
+    "web_accessible_resources": [{
+        "resources": ["mm-embassy.js"],
+        "matches": ["https://www.consularappointment.sg/*"]
+    }],
+    "content_scripts": [{
+        "matches": ["https://www.consularappointment.sg/*"],
+        "js": [ "script-injector.js" ]
+    }]
+}

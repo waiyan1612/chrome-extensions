@@ -4,3 +4,4 @@ These extensions are to be used only for local usage. These are nowhere near pro
 
 - [tableau-athena-injector](tableau-athena-injector)
 - [tableau-athena-popup](tableau-athena-popup)
+- [mm-sg-embassy-injector](mm-sg-embassy-injector)
